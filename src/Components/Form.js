@@ -41,21 +41,18 @@ render() {
       console.log(this.state.list)
     return (
       <div class="formContainer">
-          <h1>Item List</h1>
+          <h1>Add Items</h1>
         <form onSubmit={this.handleSubmit}>
-          <label for="name">
-            Item
             <input
               type="text"
               name="name"
               value={this.state.name}
               onChange={this.handleChange}
             />
-          </label>
 
           <input type="submit" value="Add" />
         </form>
-
+<h2>Added Items</h2>
         <List list={this.state.list} />
       </div>
     );
